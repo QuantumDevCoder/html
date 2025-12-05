@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Note From Andrew Shin</title>
+<title>Note By: Andrew Shin</title>
 
 <!-- Favicon -->
 <link rel="icon" type="image/png" href="images/favicon.png">
@@ -199,25 +199,32 @@ opacity: 1;
 </head>
 
 <body>
-
 <!-- POPUP -->
 <div id="popup-overlay">
     <div id="popup-box">
         <div>
             <div id="popup-title">⚠️ Important Note</div>
+
             <div id="popup-text">
-                You can only log in to Google Chrome using your school account, and your data will remain private. For more information, see Google’s Privacy Policy: https://policies.google.com/privacy?hl=en 
+                You can only log in to Google Chrome using your school account, and your data will remain private.
+                For more information, see 
+                <a href="https://policies.google.com/privacy?hl=en" target="_blank" style="color:#0067ff; text-decoration:none; font-weight:600;">
+                    Google’s Privacy Policy
+                </a>.
+                <br><br>
                 Note: 24-hour Google Chrome services are available daily. Please use this browser responsibly.
             </div>
+
             <img id="popup-image" src="images/google.png" alt="Google Icon">
         </div>
-        <button id="close-btn" disabled>Close (20)</button>
+
+        <button id="close-btn" disabled>Close (40)</button>
     </div>
 </div>
 
 <script>
-// Prevent closing for 20 seconds
-let seconds = 20;
+// Prevent closing for 40 seconds
+let seconds = 40;
 const btn = document.getElementById("close-btn");
 
 const timer = setInterval(() => {
@@ -239,7 +246,7 @@ btn.addEventListener("click", () => {
     }
 });
 </script>
-
+    
 <div class="hero-container">
 
 <!-- LEFT CONTENT -->
